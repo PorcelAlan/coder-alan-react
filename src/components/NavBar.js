@@ -15,7 +15,7 @@ class NavBar extends React.Component{
                         <li class="active"><a href="#">Productos</a></li>
                         <li><a href="#">Soluciones publicitarias</a></li>
                         <li><a href="#">Media Kit</a></li>
-                        <li><a href="#">Audiencias</a></li>
+                        <li><a href="#">Audienciass</a></li>
                     </ul>
                 </div>
             </nav>
