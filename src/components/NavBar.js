@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import logo from './logo-la-voz-comercial.svg'
 import '../App.css';
 
 class NavBar extends React.Component{
     render(){
         return(
+            <header className="App-header">
             <nav  class="navbar navbar-inverse navbar-fixed-top">
                 <div  class="container-fluid">
                     <div class="navbar-header">
@@ -19,6 +19,7 @@ class NavBar extends React.Component{
                     </ul>
                 </div>
             </nav>
+            </header>
 
         )
     }
@@ -26,4 +27,3 @@ class NavBar extends React.Component{
 
 
 export default NavBar;
-ReactDOM.render(<NavBar />, document.getElementById('root'));
