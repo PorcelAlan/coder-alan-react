@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from './logo-la-voz-comercial.svg'
 import '../App.css';
+import CartWidget from './CartWidget';
 
-class NavBar extends React.Component{
-    render(){
-        return(
+function NavBar() {
+    return (
+            
             <header className="App-header">
             <nav  class="navbar navbar-inverse navbar-fixed-top">
                 <div  class="container-fluid">
@@ -15,15 +16,14 @@ class NavBar extends React.Component{
                         <li class="active"><a href="#">Productos</a></li>
                         <li><a href="#">Soluciones publicitarias</a></li>
                         <li><a href="#">Media Kit</a></li>
-                        <li><a href="#">Audienciass</a></li>
+                        <li><a href="#">Audiencias</a></li>
+                        <li><CartWidget /></li> 
                     </ul>
                 </div>
             </nav>
-            </header>
-
-        )
+            </header>  
+        );
     }
-}
 
 
 export default NavBar;
