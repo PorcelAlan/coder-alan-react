@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo-la-voz-comercial.svg'
+import logo from './img/logo-la-voz-comercial.svg'
 import '../App.css';
 import CartWidget from './CartWidget';
 

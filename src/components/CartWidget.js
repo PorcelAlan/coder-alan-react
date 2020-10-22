@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import carrito from './carritopng.png';
+import carrito from './img/carritopng.png';
 
 
 function CartWidget () {
