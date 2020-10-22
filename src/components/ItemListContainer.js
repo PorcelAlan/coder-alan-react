@@ -4,7 +4,7 @@ import '../App.css';
 
 function ItemListContainer ({title}) {
         return(
-            <div>
+            <div className="ItemListContainer">
                 <h1>{title}</h1>
 
             </div>

@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       
         <NavBar />
-        <ItemListContainer title="Mi lista de productos" />
+        <ItemListContainer title="MI LISTA DE PRODUCTOS" />
         
     </div>
 
