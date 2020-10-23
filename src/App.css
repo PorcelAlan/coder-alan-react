@@ -65,3 +65,32 @@ ul.navbar-nav {
   margin-top: 40px;
   font-family: Helvetic;
 }
+
+
+.boton-sumar-restar {
+  margin: 10px 10px 10px 10px;
+  font-size: 15px;
+  border: 1px solid black;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.boton-cantidad-items {
+  margin: 10px 10px 10px 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.stock {
+  margin-top: 25px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.ItemCount-div {
+  border: 1px solid black;
+  width: 430px;
+  padding: 25px;
+  margin: 0 auto;
+}
