@@ -15,10 +15,12 @@ function App() {
   return (
     
 
-    <div className="App">
+    <div className='App'>
         <NavBar />
         <ItemListContainer title="MI LISTA DE PRODUCTOS" />
-        <ItemCount initial={0} stock= {5} onAdd= {onAdd} />
+
+
+       {/* <ItemCount initial={0} stock= {5} onAdd= {onAdd} /> */}
     </div>
 
   );

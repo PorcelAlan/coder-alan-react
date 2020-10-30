@@ -99,3 +99,20 @@ ul.navbar-nav {
 .itemsCarrito {
   font-size: 12px;
 }
+
+
+.ItemClase {
+  padding-top: 30px;
+  border: 1px solid black;
+  width: 200px;
+  height: 250px;
+  font-size: 15px;
+  margin: 0px 0px 0px 0px;
+}
+
+.ItemListClase {
+ margin-left: 200px;
+ margin-top: 80px;
+ display: inline-block;
+ 
+}
