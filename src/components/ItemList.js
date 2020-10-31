@@ -7,7 +7,6 @@ function ItemList (items) {
 
   const ItemsAMostrar = items.ItemsVisibles;
 
-  console.log(ItemsAMostrar);
       
         return ItemsAMostrar.map((item,index) => (
               <div className="ItemListClase">
