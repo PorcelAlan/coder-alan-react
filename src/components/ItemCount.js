@@ -24,7 +24,7 @@ function ItemCount ({initial, stock, onAdd }) {
     <button className="boton-sumar-restar" onClick={sumarItems}> +1   </button>
 
    {/* <button onClick={onAdd(initial)}>Añadir al carrito</button> */}
-    <button onClick = { ( ) => onAdd(cantidad)}> Agregar </button>
+    <button className="boton-agregar" onClick = { ( ) => onAdd(cantidad)}> Agregar </button>
 
     <div className="stock"> El stock actual es de {stock} items.</div> 
     

@@ -21,7 +21,7 @@ function ItemListContainer ({title}) {
         itemsAMostrar().then(items =>
               {   
               setItems(items);
-              })},1500)
+              })},1000)
         },[]);
 
 
