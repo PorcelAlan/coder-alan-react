@@ -17,8 +17,8 @@ function NavBar({itemsCarrito}) {
                         <li className="active"><a href="#">Productos</a></li>
                         <li><a href="#">Soluciones publicitarias</a></li>
                         <li><a href="#">Media Kit</a></li>
-                        <li><Link to="/otrocomponente/1">Audiencias</Link></li>
-                        <li><CartWidget itemsCarrito={0} /></li> 
+                        <li>Audiencias</li>
+                        <li><Link to="/carrito"><CartWidget itemsCarrito={0} /> </Link></li> 
                     </ul>
                 </div>
             </nav>

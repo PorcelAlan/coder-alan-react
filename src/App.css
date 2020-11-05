@@ -133,3 +133,9 @@ ul.navbar-nav {
   border: solid 1px black;
   padding: 15px 15px 15px 15px;
 }
+
+
+.carrito {
+  margin-top: 200px;
+  font-size: 45px;
+}

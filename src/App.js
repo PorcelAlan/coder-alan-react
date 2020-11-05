@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import ItemCount from './components/ItemCount';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemDetail from './components/ItemDetail';
+import Cart from './components/Cart';
 
 
 function App() {
@@ -29,6 +30,11 @@ function App() {
           <Route exact path="/otrocomponente/:id">
             <ItemDetailContainer />
           </Route>
+
+          <Route exact path="/carrito">
+            <Cart />
+          </Route>
+
        </Switch>
     </div>
     </BrowserRouter>
