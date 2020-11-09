@@ -14,10 +14,10 @@ function NavBar({itemsCarrito}) {
                       <Link to='/'><img className="logo-img"  src={logo} /> 
                         </Link>     </div>
                     <ul className="nav navbar-nav">
-                        <li className="active"><a href="#">Productos</a></li>
-                        <li><a href="#">Soluciones publicitarias</a></li>
-                        <li><a href="#">Media Kit</a></li>
-                        <li>Audiencias</li>
+                        <li className="liNavbar"><a href="#">Productos</a></li>
+                        <li className="liNavbar"><a href="#">Soluciones publicitarias</a></li>
+                        <li className="liNavbar"><a href="#">Media Kit</a></li>
+                        <li className="liNavbar">Audiencias</li>
                         <li><Link to="/carrito"><CartWidget itemsCarrito={0} /> </Link></li> 
                     </ul>
                 </div>

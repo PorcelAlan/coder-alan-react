@@ -38,66 +38,36 @@
 }
 
 .logo-img {
-  height: 65px;
+  height: 165px;
   width: 200px;
-  margin-top: 5px;
+  margin-top: 5px ;
 }
 
 .carrito-img {
-  margin-top: 1px;
-  height: 55px;
-  width: 55px;
-  margin-left: 85px;
+  margin-top: 30px;
+  height: 75px;
+  width: 75px;
+  margin-left: 185px;
 }
 
 .container-fluid {
   height: 70px;
 }
 
-ul.navbar-nav {
-  margin-top: 10px;
+.liNavbar {
+  margin-top: 50px;
+  margin-left: 40px;
   
 }
 
 
-
-.ItemListContainer {
-  margin-top: 40px;
-  font-family: Helvetic;
+.navbar {
+  display: block;
+  position: absolute;
 }
 
 
-.boton-sumar-restar {
-  margin: 10px 10px 10px 10px;
-  font-size: 14px;
-  border: 1px solid black;
-  font-weight: bold;
-}
 
-.boton-cantidad-items {
-  margin: 10px 10px 10px 10px;
-  font-size: 15px;
-  border: 1px solid black;
-}
-
-.boton-agregar {
-  margin: 30px 10px 10px 90px;
-    
-  
-}
-
-.stock {
-  margin-top: 25px;
-  font-size: 20px;
-  font-style: italic;
-}
-
-.ItemCount-div {
-  border: 1px solid black;
-  width: 330px;
-  padding: 25px;
-  margin: 0 auto;
-}
 
 
 .itemsCarrito {
@@ -108,14 +78,29 @@ ul.navbar-nav {
 .ItemClase {
   padding-top: 30px;
   border: 1px solid black;
-  width: 200px;
-  height: 250px;
-  font-size: 15px;
+  width: 500px;
+  height: 550px;
+  font-size: 25px;
   margin: 0px 0px 0px 0px;
 }
 
+.ItemListContainer {
+  margin-top: 70px;
+  font-family: Arial;
+  padding-bottom: 300px;
+  position: absolute;
+}
+
+.tituloHome {
+  color: black;
+  font-family: Helvetic;
+  font-size: 55px;
+  margin-top: 50px;
+  
+}
+
 .ItemListClase {
- margin-left: 200px;
+ margin-left: 100px;
  margin-top: 80px;
  display: inline-block;
  
@@ -127,15 +112,61 @@ ul.navbar-nav {
 }
 
 .itemDetalle {
-  width: 400px;
+  display: block;
+  width: 1000px;
   margin: auto;
+  margin-top:150px;
   text-align: left;
   border: solid 1px black;
-  padding: 15px 15px 15px 15px;
+  padding: 65px 15px 15px 15px;
+  font-size: 25px;
+  padding-bottom:25px;
+  margin-bottom:100px;
 }
+
+.ItemCount-div {
+  border: 1px solid black;
+  width: 530px;
+  text-align: center;
+  padding: 25px;
+  margin-top: 35px;
+  float: right;
+}
+
+.boton-sumar-restar {
+  margin: 10px 10px 10px 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.boton-cantidad-items {
+  margin: 10px 10px 10px 10px;
+  font-size: 25px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.boton-agregar {
+  margin: 30px 10px 10px;
+    
+  
+}
+
+.stock {
+  margin-top: 25px;
+  font-size: 25px;
+  font-style: italic;
+}
+
 
 
 .carrito {
   margin-top: 200px;
   font-size: 45px;
+}
+
+.botonFinalizar {
+  margin: auto;
 }

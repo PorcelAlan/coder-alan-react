@@ -7,7 +7,6 @@ function CartWidget ({itemsCarrito}) {
         return(
             <div>
                 <img alt="hola" background-color="transparent" className="carrito-img"  src={carrito}   />
-                <p className="itemsCarrito">{itemsCarrito}</p>
             </div>
 
         )

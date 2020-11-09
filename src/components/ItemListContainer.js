@@ -29,7 +29,7 @@ function ItemListContainer ({title}) {
 
         return(
             <div style={{marginTop:100}} className="ItemListContainer">
-                <h1  style={{color: 'green'}}>{title} </h1>
+                <h1  className='tituloHome'>{title} </h1>
                 <ItemList ItemsVisibles={items}/> 
             </div>
 

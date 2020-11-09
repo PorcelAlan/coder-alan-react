@@ -11,10 +11,6 @@ import Cart from './components/Cart';
 
 function App() {
   
-  const onAdd = (cantidad) => {
-    {/* const itemsAgregados = cantidad; */}
-  alert("Los items añadidos al carrito fueron " + cantidad);
-}
 
   return (
     <BrowserRouter>
@@ -31,7 +27,7 @@ function App() {
             <ItemDetailContainer />
           </Route>
 
-          <Route exact path="/carrito">
+          <Route exact path="/carrito/:itemsComprados">
             <Cart />
           </Route>
 

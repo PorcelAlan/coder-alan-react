@@ -18,7 +18,7 @@ function ItemCount ({initial, stock, onAdd }) {
 
     return (
 
-    <div className="ItemCount-div">
+    <div id='123' className="ItemCount-div">
     <button className="boton-sumar-restar" onClick={restarItems}> -1  </button>
     <button className="boton-cantidad-items"> Cantidad de items ({cantidad})  </button>
     <button className="boton-sumar-restar" onClick={sumarItems}> +1   </button>
