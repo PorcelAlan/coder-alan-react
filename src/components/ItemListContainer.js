@@ -1,6 +1,13 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import '../App.css';
+import CartContextProvider from '../context/CartContext';
 import ItemList from './ItemList';
+import CartContext from '../context/CartContext';
+
+  
+  
+  
+
 
 
 const itemsAMostrar = () => {
@@ -15,11 +22,16 @@ const itemsAMostrar = () => {
 function ItemListContainer ({title}) {
 
   const[items, setItems] = useState([]);
-    
+
+  const miCarrito = useContext(CartContext);
+  console.log(miCarrito); 
+
+
       useEffect(() => {
         setTimeout(() => {
         itemsAMostrar().then(items =>
               {   
+                
               setItems(items);
               })},1000)
         },[]);

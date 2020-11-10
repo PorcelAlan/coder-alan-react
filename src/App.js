@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
@@ -7,12 +7,17 @@ import ItemCount from './components/ItemCount';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemDetail from './components/ItemDetail';
 import Cart from './components/Cart';
+import CartContext from './context/CartContext';
+import CartContextProvider from './context/CartContext';
 
 
 function App() {
   
 
+  
+
   return (
+    <CartContextProvider> 
     <BrowserRouter>
 
     <div className='App'>
@@ -34,6 +39,7 @@ function App() {
        </Switch>
     </div>
     </BrowserRouter>
+    </CartContextProvider>
   );
 
  

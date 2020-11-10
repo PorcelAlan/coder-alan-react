@@ -1,7 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useContext} from 'react';
 import '../App.css';
 import ItemDetail from './ItemDetail.js';
 import { useParams } from 'react-router-dom';
+import CartContext from '../context/CartContext';
 
 function ItemDetailContainer () {
     
@@ -17,6 +18,10 @@ function ItemDetailContainer () {
     const[item, setItem] = useState(null);
     const id = useParams().id;
     
+    const miCarrito = useContext(CartContext);
+
+   
+    
 
             useEffect(() => {
                
@@ -27,7 +32,7 @@ function ItemDetailContainer () {
                 
  
                 return ( item &&
-                    <ItemDetail key={id} item={item}   />
+                    <ItemDetail key={id} item={item}   /> 
                       )
 
         

@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useContext} from 'react';
 import '../App.css';
 import ItemDetailContainer from '../components/ItemDetailContainer';
 import ItemDetail from './ItemDetail.js';
 import { Link } from 'react-router-dom';
-
+import CartContext from '../context/CartContext';
 
 function Item (item) {
 
@@ -14,6 +14,7 @@ function Item (item) {
     }
 */}
      const [string, setString] = useState('/otrocomponente/' + item.id);
+    
 
         return(
             <div className='ItemClase'>
