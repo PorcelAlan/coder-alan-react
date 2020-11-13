@@ -1,26 +1,36 @@
-import React, {useEffect, useState, Component} from 'react';
+import React, {useEffect, useState, Component, useContext} from 'react';
 import ReactDOM from 'react-dom';
 import { findAllInRenderedTree } from 'react-dom/test-utils';
 import '../App.css';
 import ItemCount from '../components/ItemCount';
 import BotonFinalizar from '../components/BotonFinalizar';
+import {CartContext} from '../context/CartContext';
+import { getAllByPlaceholderText } from '@testing-library/react';
 
 
 function ItemDetail ({item}) {
 
     const [cantidadItems, setCantidad] = useState();
 
-
-
+    const {addItemCart,removeItemCart,clearCart,cart} = useContext(CartContext); 
+    
+    
+    
     useEffect(() => {
-        console.log('renderizado');
+       
     },[cantidadItems]);
 
     const onAdd = (cantidad) => {
-        document.getElementById(123).style.display = 'none';
+        if (cantidad > 0) {
+        document.getElementById('itemCounter').style.display = 'none';
         document.getElementsByClassName('botonFinalizar')[0].style.display = 'block';
         setCantidad(cantidad);
+        addItemCart(item,cantidad);
+    } else {
+        alert('No agregaste ningún item.')
     }
+    }
+
 
     
     return (

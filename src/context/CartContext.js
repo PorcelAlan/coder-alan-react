@@ -5,24 +5,36 @@ export const CartContext = React.createContext([]);
 
 // export function useCartContext = () => useContext(CartContext);
 
- export default function CartContextProvider ({defaultValue= ['alan','pepe'], children}) {
+ export default function CartContextProvider ({defaultValue= [], children}) {
 
-    const [cart, setCart] = useState(defaultValue);
-  
+    const [cart, setCart] = useState([]);
+    const [cantidadItems,setCantidadItems] = useState(0); 
 
-    function add (idItem) {
-        console.log('added');
+      
+
+    function addItemCart (Item, cantidad) {
+        const setItem = () => {Item.cantidad = cantidad};
+        setItem(cantidad);
+        setCart([...cart, Item]);
+        setCantidadItems(cantidadItems + cantidad);
     }
 
-    function remove (idItem) {
-        console.log('removed');
+    function getCantidadItems() {
+        return cantidadItems;
     }
 
-    function clear (idItem) {
-        console.log('removed');
+
+
+    function removeItemCart (Item) {
+        console.log(cart);
     }
 
-    return <CartContext.Provider value={['alan','pepe']}>
+    function clearCart (idItem) {
+        setCantidadItems(0);
+        setCart([]);
+    }
+
+    return <CartContext.Provider value={{getCantidadItems, addItemCart,removeItemCart,clearCart,cart}}>
 
             {children}
 

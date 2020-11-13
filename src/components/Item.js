@@ -13,6 +13,11 @@ function Item (item) {
       console.log(item.id);
     }
 */}
+
+   function setItem(cantidad) {
+       item.cantidad = cantidad;
+   }
+
      const [string, setString] = useState('/otrocomponente/' + item.id);
     
 

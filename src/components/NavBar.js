@@ -14,7 +14,7 @@ function NavBar({itemsCarrito}) {
                       <Link to='/'><img className="logo-img"  src={logo} /> 
                         </Link>     </div>
                     <ul className="nav navbar-nav">
-                        <li className="liNavbar"><a href="#">Productos</a></li>
+                        <li className="liNavbar"><Link to='/'><a href="#">Productos</a></Link></li>
                         <li className="liNavbar"><a href="#">Soluciones publicitarias</a></li>
                         <li className="liNavbar"><a href="#">Media Kit</a></li>
                         <li className="liNavbar">Audiencias</li>

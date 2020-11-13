@@ -32,7 +32,7 @@ function App() {
             <ItemDetailContainer />
           </Route>
 
-          <Route exact path="/carrito/:itemsComprados">
+          <Route exact path="/carrito/">
             <Cart />
           </Route>
 

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import '../App.css';
+import {CartContext} from '../context/CartContext';
 
 function ItemCount ({initial, stock, onAdd }) { 
     const [cantidad, setCantidadItems] = useState(initial);
@@ -18,7 +19,7 @@ function ItemCount ({initial, stock, onAdd }) {
 
     return (
 
-    <div id='123' className="ItemCount-div">
+    <div id='itemCounter' className="ItemCount-div">
     <button className="boton-sumar-restar" onClick={restarItems}> -1  </button>
     <button className="boton-cantidad-items"> Cantidad de items ({cantidad})  </button>
     <button className="boton-sumar-restar" onClick={sumarItems}> +1   </button>
