@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useContext} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../App.css';
 import ItemDetail from './ItemDetail.js';
 import { useParams } from 'react-router-dom';
@@ -26,7 +26,7 @@ function ItemDetailContainer () {
             useEffect(() => {
                
                 itemAMostrar().then(items =>
-                        setItem(items.filter(item=> item.id == id)[0])
+                        setItem(items.filter(item=> item.id === id)[0])
                     )
                 },[]);
                 

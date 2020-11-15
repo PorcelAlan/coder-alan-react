@@ -11,12 +11,12 @@ function NavBar({itemsCarrito}) {
             <nav  className="navbar navbar-inverse navbar-fixed-top">
                 <div  className="container-fluid">
                     <div className="navbar-header">
-                      <Link to='/'><img className="logo-img"  src={logo} /> 
+                      <Link to='/'><img alt='LVI' className="logo-img"  src={logo} /> 
                         </Link>     </div>
                     <ul className="nav navbar-nav">
-                        <li className="liNavbar"><Link to='/'><a href="#">Productos</a></Link></li>
-                        <li className="liNavbar"><a href="#">Soluciones publicitarias</a></li>
-                        <li className="liNavbar"><a href="#">Media Kit</a></li>
+                        <li className="liNavbar"><Link to='/'>Productos</Link></li>
+                        <li className="liNavbar">Soluciones publicitarias</li>
+                        <li className="liNavbar">Media Kit</li>
                         <li className="liNavbar">Audiencias</li>
                         <li><Link to="/carrito"><CartWidget itemsCarrito={0} /> </Link></li> 
                     </ul>

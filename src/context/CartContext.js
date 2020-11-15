@@ -1,5 +1,4 @@
-import React, { useContext, useState } from 'react';
-import Cart from '../components/Cart';
+import React, { useState } from 'react';
 
 export const CartContext = React.createContext([]);
 
@@ -10,13 +9,23 @@ export const CartContext = React.createContext([]);
     const [cart, setCart] = useState([]);
     const [cantidadItems,setCantidadItems] = useState(0); 
 
-      
+    
+
 
     function addItemCart (Item, cantidad) {
+        
+  
         const setItem = () => {Item.cantidad = cantidad};
         setItem(cantidad);
-        setCart([...cart, Item]);
-        setCantidadItems(cantidadItems + cantidad);
+
+        if (cart.filter(p => p.id === Item.id).length === 0) {
+            setCart([...cart, Item]);
+            setCantidadItems(cantidadItems + cantidad);
+            } else {
+                cart.find(p => p.id === Item.id).cantidad = cart.find(p => p.id === Item.id).cantidad+cantidad;
+                setCantidadItems(cantidadItems + cantidad);
+            }
+
     }
 
     function getCantidadItems() {
@@ -26,7 +35,9 @@ export const CartContext = React.createContext([]);
 
 
     function removeItemCart (Item) {
-        console.log(cart);
+        setCantidadItems(cantidadItems-Item.cantidad);
+        cart.splice(cart.indexOf(Item), 1);
+        console.log('removido');  
     }
 
     function clearCart (idItem) {

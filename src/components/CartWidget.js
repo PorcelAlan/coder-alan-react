@@ -1,10 +1,10 @@
-import React, {useEffect, useState, Component, useContext} from 'react';
+import React, {useContext} from 'react';
 import '../App.css';
 import carrito from './img/carritopng.png';
 import {CartContext} from '../context/CartContext';
 
 function CartWidget ({itemsCarrito}) {
-    const {cart, getCantidadItems} = useContext(CartContext);  
+    const {getCantidadItems} = useContext(CartContext);  
 
         return(
             <div>

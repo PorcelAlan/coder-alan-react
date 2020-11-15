@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import '../App.css';
-import {CartContext} from '../context/CartContext';
+
 
 function ItemCount ({initial, stock, onAdd }) { 
     const [cantidad, setCantidadItems] = useState(initial);
