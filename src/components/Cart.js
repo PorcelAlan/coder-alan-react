@@ -1,11 +1,12 @@
 import React, {useContext} from 'react';
 import '../App.css';
 import {CartContext} from '../context/CartContext';
+import { Link } from 'react-router-dom';
 
 
 function Cart () {
 
-    const {cart,removeItemCart,clearCart} = useContext(CartContext);  
+    const {getCantidadItems, cart,removeItemCart,clearCart} = useContext(CartContext);  
     
 
     // const itemsComprados = useParams().itemsComprados;
@@ -26,7 +27,7 @@ function Cart () {
         marginTop: 14
     }
 
-
+    if (getCantidadItems() > 0) {
         return(
             <div style={{marginBottom:200}}>
                 <h1 className="carrito"> Este es mi carrito </h1>
@@ -45,8 +46,11 @@ function Cart () {
                  <button style={{marginLeft: 30, fontSize:30, marginTop:100}} onClick={clearCart}>Limpiar Carrito</button> 
             </div>
 
-        )
-    }
+        )}  if (getCantidadItems() === 0) {
+        return <div> <h1 className="carrito"> ¡Aún no comprate nada! </h1> 
+        <Link to='/'> <button style={{padding: 30, fontSize:40, marginTop:100}}>Quiero ver productos</button></Link> </div>
+        }   
+}
 
 
 export default Cart;
