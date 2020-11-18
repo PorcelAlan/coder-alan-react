@@ -22,8 +22,9 @@ export const CartContext = React.createContext([]);
             setCart([...cart, Item]);
             setCantidadItems(cantidadItems + cantidad);
             } else {
-                
-                cart.find(p => p.id === Item.id).cantidad = cart.find(p => p.id === Item.id).cantidad+cantidad;
+                const nuevoCart = [...cart];
+                nuevoCart.find(p => p.id === Item.id).cantidad = nuevoCart.find(p => p.id === Item.id).cantidad+cantidad;
+                setCart(nuevoCart);
                 setCantidadItems(cantidadItems + cantidad);
             }
 
