@@ -6,7 +6,7 @@ function Item (item) {
 
  
 
-    const [string] = useState('/otrocomponente/' + item.id);
+    const [string] = useState('/item/' + item.id);
     
 
         return(

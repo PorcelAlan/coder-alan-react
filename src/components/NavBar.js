@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import logo from './img/logo-la-voz-comercial.svg'
 import '../App.css';
 import CartWidget from './CartWidget';
+import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function NavBar({itemsCarrito}) {
+
+const [categoria, setCategoria] = useState(useParams().categoria);
+
+const [miCategoria, cambioMiCategoria] = useState();
+
+
+
+
     return (
 
             <header className="App-header">
@@ -15,9 +24,8 @@ function NavBar({itemsCarrito}) {
                         </Link>     </div>
                     <ul className="nav navbar-nav">
                         <li className="liNavbar"><Link to='/'>Productos</Link></li>
-                        <li className="liNavbar">Soluciones publicitarias</li>
-                        <li className="liNavbar">Media Kit</li>
-                        <li className="liNavbar">Audiencias</li>
+                        <li className="liNavbar"><Link to='/microfonos'>Micrófonos</Link></li>
+                        <li className="liNavbar"><Link to='/auriculares'>Auriculares</Link></li>
                         <li><Link to="/carrito"><CartWidget itemsCarrito={0} /> </Link></li> 
                     </ul>
                 </div>

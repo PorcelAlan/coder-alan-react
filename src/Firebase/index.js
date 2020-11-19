@@ -13,7 +13,8 @@ const app = firebase.initializeApp({
 export function getFirebase() {
     return app;
 }
-export function getFirestore() {
+
+export function getFireStore() {
     return firebase.firestore(app);
 }
 // Export other firebase integrations
