@@ -26,7 +26,6 @@ function ItemListContainer ({title}) {
             console.log('no results!');
           } else {
             setItems(querySnapshot.docs.map(a => a = {id : a.id, ...a.data()}));
-            console.log('hay algo acá');
           }
         } else {
 

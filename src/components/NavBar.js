@@ -1,15 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import logo from './img/logo-la-voz-comercial.svg'
 import '../App.css';
 import CartWidget from './CartWidget';
-import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function NavBar({itemsCarrito}) {
 
-const [categoria, setCategoria] = useState(useParams().categoria);
-
-const [miCategoria, cambioMiCategoria] = useState();
 
 
 
