@@ -39,12 +39,11 @@
 
 .logo-img {
   height: 165px;
-  width: 200px;
+  width: 165px;
   margin-top: 5px ;
 }
 
 .carrito-img {
-  margin-top: 30px;
   height: 75px;
   width: 75px;
   margin-left: 185px;
@@ -76,7 +75,7 @@
 
 
 .ItemClase {
-  padding-top: 30px;
+  padding: 30px 30px 30px 30px;
   border: 1px solid black;
   width: 500px;
   height: 550px;
@@ -162,6 +161,8 @@
 
 
 
+
+
 .carrito {
   margin-top: 200px;
   font-size: 45px;
@@ -170,3 +171,4 @@
 .botonFinalizar {
   margin: auto;
 }
+

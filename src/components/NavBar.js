@@ -20,8 +20,8 @@ function NavBar({itemsCarrito}) {
                         </Link>     </div>
                     <ul className="nav navbar-nav">
                         <li className="liNavbar"><Link to='/'>Productos</Link></li>
-                        <li className="liNavbar"><Link to='/microfonos'>Micrófonos</Link></li>
-                        <li className="liNavbar"><Link to='/auriculares'>Auriculares</Link></li>
+                        <li className="liNavbar"><Link to='/category/Microfonos'>Micrófonos</Link></li>
+                        <li className="liNavbar"><Link to='/category/Auriculares'>Auriculares</Link></li>
                         <li><Link to="/carrito"><CartWidget itemsCarrito={0} /> </Link></li> 
                     </ul>
                 </div>

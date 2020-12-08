@@ -36,11 +36,10 @@ function ItemDetail ({item}) {
         <div className='itemDetalle'>
                 <p><b>Nombre:</b> {item.name}</p>
 
-                <p><b>Su ID es:</b> {item.id}</p>
                 <p><b>Su precio es:</b> {item.price}</p>
-                <p><b>Descripción: </b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p><b>Descripción: </b> {item.descripcion} </p>
                 <img alt="IMG-Producto" style={{width: 300, height: 300}} src={item.img} />
-                <ItemCount initial={0} stock= {5} onAdd= {onAdd} />
+                <ItemCount initial={0} stock= {item.stock} onAdd= {onAdd} />
                 <BotonFinalizar cantidad={cantidadItems} text={'Ir al carrito'} />
         </div>
     )
@@ -53,7 +52,6 @@ function ItemDetail ({item}) {
 
 
 export default ItemDetail;
-
 
 
 

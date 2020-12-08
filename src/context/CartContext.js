@@ -8,8 +8,7 @@ export const CartContext = React.createContext([]);
 
     const [cart, setCart] = useState([]);
     const [cantidadItems,setCantidadItems] = useState(0); 
-
-    
+    const [unaNuevaOrden, setUnaNuevaOrden] = useState();
 
 
     function addItemCart (Item, cantidad) {
@@ -30,6 +29,14 @@ export const CartContext = React.createContext([]);
 
     }
 
+    function setNewOrder(unaOrden) {
+       setUnaNuevaOrden(unaOrden);
+    }
+
+    function getNewOrder(){
+        return unaNuevaOrden;
+    }
+
     function getCantidadItems() {
         return cantidadItems;
     }
@@ -47,7 +54,7 @@ export const CartContext = React.createContext([]);
         setCart([]);
     }
 
-    return <CartContext.Provider value={{getCantidadItems, addItemCart,removeItemCart,clearCart,cart}}>
+    return <CartContext.Provider value={{getCantidadItems, getNewOrder, setNewOrder, addItemCart,removeItemCart,clearCart,cart}}>
 
             {children}
 

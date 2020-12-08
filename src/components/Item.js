@@ -12,10 +12,9 @@ function Item (item) {
         return(
             <div  className='ItemClase'>
                 <p><b>Nombre:</b> {item.name}</p>
-                <p><b>ID:</b> {item.id}</p>
-                <p><b>Price: </b>{item.price}</p>
+                <p><b>Precio: </b>{item.price}</p>
                 <img alt="IMG-Producto" style={{width:300, height: 300}} src={item.img} />
-                <Link to={string}> <button style={{padding:10}}>Ver detalle</button> </Link>
+                <Link to={string}> <button style={{padding: 10, marginTop:10}}>Ver detalle</button> </Link>
             </div>
 
         )

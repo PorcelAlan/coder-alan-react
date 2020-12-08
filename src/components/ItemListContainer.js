@@ -39,7 +39,7 @@ function ItemListContainer ({title}) {
 
         return(
             <div style={{marginTop:100}} className="ItemListContainer">
-                <h1  className='tituloHome'>{categoria} </h1>
+                <h1 style={{fontFamily: "Helvetica"}} className='tituloHome'>{categoria} </h1>
                 <ItemList ItemsVisibles={items}/> 
             </div>
 
@@ -51,16 +51,3 @@ export default ItemListContainer;
 
 
 
-
-{/*
-async function getFiltrados() {
-  const db = getFireStore();
-  debugger;
-  const itemQueryByManyId = await db.collection("items").where(firebase.firestore.FieldPath.documentId(), 
-  'in', cart.map(c => c.type === 'auriculares') )
-  .get();
-}
- 
-  console.log(getFiltrados());  
-
-*/}

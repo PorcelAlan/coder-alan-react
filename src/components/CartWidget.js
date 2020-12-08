@@ -7,7 +7,7 @@ function CartWidget ({itemsCarrito}) {
     const {getCantidadItems} = useContext(CartContext);  
 
         return(
-            <div>
+            <div style={{display: "inline" }}>
                 <img alt="hola" background-color="transparent" className="carrito-img"  src={carrito}   />
                 <p> {getCantidadItems()}  </p>
             </div>
