@@ -15,6 +15,10 @@ function Cart () {
     const [emailConfirmado, setEmailConfirmado] = useState('a');
     const [total, setTotal] = useState();
 
+
+    
+
+
     async function createOrder() {
         const newOrder = {
             buyer: { name: {name}, phone: {phone}, email: {email} },
@@ -85,7 +89,7 @@ function Cart () {
         if (cart.length > 0){
         const reducer = (accumulator, currentValue) => accumulator + currentValue;
         setTotal((cart.map(p => p.price * p.cantidad)).reduce(reducer));}
-    },[]);
+    },[cart]);
 
     
 

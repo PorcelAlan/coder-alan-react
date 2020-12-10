@@ -34,7 +34,7 @@ function ItemListContainer ({title}) {
                   setItems(querySnapshot.docs.map(a => a = {id : a.id, ...a.data()}));}
                 })
                 }
-              },[categoria]);
+              },[categoria,itemCollection]);
 
 
         return(

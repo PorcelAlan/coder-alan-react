@@ -10,6 +10,7 @@ function ItemDetailContainer () {
     const db = getFireStore();
     const itemCollection = db.collection("items"); 
     const id = useParams().id;  
+    const [itemNoExiste, setItemNoExiste] = useState();
     
     
     const[item, setItem] = useState();
@@ -25,9 +26,14 @@ function ItemDetailContainer () {
                       setItem(found);   
                   })
                 }
+                
                
                 
-                },[]);
+                },[item,id,itemCollection]);
+
+               
+
+                
 
              
 
@@ -39,10 +45,10 @@ function ItemDetailContainer () {
                        <ItemDetail key={id} item={item}   /> 
                    </div>              
                    :
-                   <div className="w3-container w3-center w3-animate-opacity">
-                        <p className="carrito"> Este item no existe. </p>
-                     </div>   
-                    )
+                  <center><div><p className="loader carrito"></p>
+                  </div></center> 
+                   
+                   )
 
                 
                
